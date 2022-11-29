@@ -19,3 +19,10 @@ if [ -e ~/.vimrc ] || [ -L ~/.vimrc ]; then
 else
   symlink "$pwd/.vimrc" ~/.vimrc
 fi
+
+# .tmux.conf
+if [ -e ~/.tmux.conf ] || [ -L ~/.tmux.conf ]; then
+    echo "~/.tmux.conf already exists."
+else
+  symlink "$pwd/.tmux.conf" ~/.tmux.conf
+fi

@@ -23,3 +23,11 @@ if [ -L ~/.vimrc ]; then
 else
   echo "symlink ~/.vimrc not exists."
 fi
+
+# .vimrc
+if [ -L ~/.tmux.conf ]; then
+  backup "$pwd/.tmux.conf"
+  rm ~/.tmux.conf
+else
+  echo "symlink ~/.tmux.conf not exists."
+fi
