@@ -10,7 +10,7 @@ backup() {
     if [ ! -L "$target" ]; then
       today=`date +%Y%m%d`
       file=`basename $target`
-      cp "$target" ~/backup/"$file.$today"
+      cp "$target" ~/.dotfiles.backup/"$file.$today"
       echo "-----> Moved your old $target config file to ~/backup/$file.$today"
     fi
   fi

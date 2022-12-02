@@ -26,3 +26,4 @@ if [ -e ~/.tmux.conf ] || [ -L ~/.tmux.conf ]; then
 else
   symlink "$pwd/.tmux.conf" ~/.tmux.conf
 fi
+

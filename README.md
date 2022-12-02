@@ -1,5 +1,4 @@
 # dotfiles
-WIP
 
 ## Install
 
@@ -13,9 +12,12 @@ $ sh install.sh
 
 ```
 $ cd ~/dotfiles
+$ mkdir .dotfiles.backup
 $ sh uninstall.sh
 ```
 
-## dotfiles
+## List of dotfile
+
 - .vimrc
-- 
+- .tmux.conf
+
