@@ -30,6 +30,9 @@ call dein#add('vim-airline/vim-airline')
 call dein#add('sainnhe/sonokai')
 
 call dein#end()
+if dein#check_install()
+  call dein#install()
+endif
 
 " plugin settings 
 "" vim-airline
